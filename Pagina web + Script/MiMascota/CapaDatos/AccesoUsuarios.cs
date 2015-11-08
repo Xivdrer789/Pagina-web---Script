@@ -108,6 +108,7 @@ namespace CapaDatos
         }
         #endregion
 
+        #region Listar publicaciones
         public List<Object> listarPublicacionesDeUsuario(int id)
         {
             List<Object> lista = new List<object>();
@@ -117,7 +118,7 @@ namespace CapaDatos
                 ObjectQuery<Publicacion> pub = contexto.Publicacion;
                 var linqLista = from m in pet
                                 join p in pub on m.Publicacion_id equals p.id_publicacion
-                                where m.Publicacion_id==id
+                                where p.Usuario_id==id
                                 select new
                                 {
                                     nombrePublicacion = p.nombre_publicacion,
@@ -136,7 +137,7 @@ namespace CapaDatos
                 return lista;
             }
         }
-
+        #endregion
         public Boolean ingresarPublicacion(Publicacion pub, Mascota m)
         {
             using (contexto = new EF_Pagina())
@@ -149,5 +150,7 @@ namespace CapaDatos
                 return true;
             }
         }
+
+        
     }
 }
