@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68FB2D5B-F049-4573-838C-3D4413CF3F10}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaInterfaz</RootNamespace>
+    <AssemblyName>CapaInterfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrador\EliminarPublicaciones.aspx" />
+    <Content Include="Administrador\EliminarUsuarios.aspx" />
+    <Content Include="Administrador\InicioAdmin.aspx" />
+    <Content Include="Administrador\ListarPublicaciones.aspx" />
+    <Content Include="Administrador\ListarUsuarios.aspx" />
+    <Content Include="Administrador\MascotasPublicadas.aspx" />
+    <Content Include="Administrador\Publicaciones.aspx" />
+    <Content Include="Administrador\Usuarios.aspx" />
+    <Content Include="css\banner.css" />
+    <Content Include="css\blog.css" />
+    <Content Include="css\estilos.css" />
+    <Content Include="css\fontello.css" />
+    <Content Include="css\menu.css" />
+    <Content Include="font\fontello.svg" />
+    <Content Include="imagen\banner.jpg" />
+    <Content Include="imagen\gatos-y-perros-pueden-llevarse-bien.jpg" />
+    <Content Include="imagen\Imagenes-de-perros-labradores-4.jpg" />
+    <Content Include="imagen\Imagenes-de-perros-labradores-7-300x225.jpg" />
+    <Content Include="Login\Desconectarse.aspx" />
+    <Content Include="Login\InicioLogin.aspx" />
+    <Content Include="Login\ListarPublicacion.aspx" />
+    <Content Include="Login\MascotasPublicadas.aspx" />
+    <Content Include="Login\MiPerfil.aspx" />
+    <Content Include="Login\ModificarPublicacion.aspx" />
+    <Content Include="Login\PublicarMascota.aspx" />
+    <Content Include="No-Login\IniciarSesion.aspx" />
+    <Content Include="No-Login\InicioNoLogin.aspx" />
+    <Content Include="No-Login\MascotasPublicadas.aspx" />
+    <Content Include="No-Login\Registrarse.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\EliminarPublicaciones.aspx.cs">
+      <DependentUpon>EliminarPublicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\EliminarPublicaciones.aspx.designer.cs">
+      <DependentUpon>EliminarPublicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\EliminarUsuarios.aspx.cs">
+      <DependentUpon>EliminarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\EliminarUsuarios.aspx.designer.cs">
+      <DependentUpon>EliminarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\InicioAdmin.aspx.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\InicioAdmin.aspx.designer.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ListarPublicaciones.aspx.cs">
+      <DependentUpon>ListarPublicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\ListarPublicaciones.aspx.designer.cs">
+      <DependentUpon>ListarPublicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ListarUsuarios.aspx.cs">
+      <DependentUpon>ListarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\ListarUsuarios.aspx.designer.cs">
+      <DependentUpon>ListarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\MascotasPublicadas.aspx.cs">
+      <DependentUpon>MascotasPublicadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\MascotasPublicadas.aspx.designer.cs">
+      <DependentUpon>MascotasPublicadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\MasterPageAdministracion.Master.cs">
+      <DependentUpon>MasterPageAdministracion.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\MasterPageAdministracion.Master.designer.cs">
+      <DependentUpon>MasterPageAdministracion.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Publicaciones.aspx.cs">
+      <DependentUpon>Publicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Publicaciones.aspx.designer.cs">
+      <DependentUpon>Publicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Desconectarse.aspx.cs">
+      <DependentUpon>Desconectarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Desconectarse.aspx.designer.cs">
+      <DependentUpon>Desconectarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\InicioLogin.aspx.cs">
+      <DependentUpon>InicioLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\InicioLogin.aspx.designer.cs">
+      <DependentUpon>InicioLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ListarPublicacion.aspx.cs">
+      <DependentUpon>ListarPublicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ListarPublicacion.aspx.designer.cs">
+      <DependentUpon>ListarPublicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\MascotasPublicadas.aspx.cs">
+      <DependentUpon>MascotasPublicadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\MascotasPublicadas.aspx.designer.cs">
+      <DependentUpon>MascotasPublicadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\MasterPageLogin.Master.cs">
+      <DependentUpon>MasterPageLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\MasterPageLogin.Master.designer.cs">
+      <DependentUpon>MasterPageLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login\MiPerfil.aspx.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\MiPerfil.aspx.designer.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ModificarPublicacion.aspx.cs">
+      <DependentUpon>ModificarPublicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ModificarPublicacion.aspx.designer.cs">
+      <DependentUpon>ModificarPublicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\PublicarMascota.aspx.cs">
+      <DependentUpon>PublicarMascota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\PublicarMascota.aspx.designer.cs">
+      <DependentUpon>PublicarMascota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="No-Login\IniciarSesion.aspx.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No-Login\IniciarSesion.aspx.designer.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="No-Login\InicioNoLogin.aspx.cs">
+      <DependentUpon>InicioNoLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No-Login\InicioNoLogin.aspx.designer.cs">
+      <DependentUpon>InicioNoLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="No-Login\MascotasPublicadas.aspx.cs">
+      <DependentUpon>MascotasPublicadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No-Login\MascotasPublicadas.aspx.designer.cs">
+      <DependentUpon>MascotasPublicadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="No-Login\MasterPageNoLogin.Master.cs">
+      <DependentUpon>MasterPageNoLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No-Login\MasterPageNoLogin.Master.designer.cs">
+      <DependentUpon>MasterPageNoLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="No-Login\MasterPageNoLogin2.Master.cs">
+      <DependentUpon>MasterPageNoLogin2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No-Login\MasterPageNoLogin2.Master.designer.cs">
+      <DependentUpon>MasterPageNoLogin2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="No-Login\Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No-Login\Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="No-Login\MasterPageNoLogin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{8ACBD961-598F-4DE5-A7F0-884CD6F38FC9}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{75F978F2-2EDC-49F6-BD01-8D60F33EF4FA}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login\MasterPageLogin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrador\MasterPageAdministracion.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="font\fontello.eot" />
+    <None Include="font\fontello.ttf" />
+    <None Include="font\fontello.woff" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="No-Login\MasterPageNoLogin2.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Login\ImagenesSubidas\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10808</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

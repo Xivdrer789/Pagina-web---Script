@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDMiMascotaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BDMiMascotaModelStoreContainer">
+    <EntitySet Name="Administrador" EntityType="BDMiMascotaModel.Store.Administrador" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Mascota" EntityType="BDMiMascotaModel.Store.Mascota" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Publicacion" EntityType="BDMiMascotaModel.Store.Publicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuario" EntityType="BDMiMascotaModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Mascota__Publica__0EA330E9" Association="BDMiMascotaModel.Store.FK__Mascota__Publica__0EA330E9">
+      <End Role="Publicacion" EntitySet="Publicacion" />
+      <End Role="Mascota" EntitySet="Mascota" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Publicaci__Usuar__09DE7BCC" Association="BDMiMascotaModel.Store.FK__Publicaci__Usuar__09DE7BCC">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Publicacion" EntitySet="Publicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__Adminis__0519C6AF" Association="BDMiMascotaModel.Store.FK__Usuario__Adminis__0519C6AF">
+      <End Role="Administrador" EntitySet="Administrador" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Administrador">
+    <Key>
+      <PropertyRef Name="id_administrador" />
+    </Key>
+    <Property Name="id_administrador" Type="int" Nullable="false" />
+    <Property Name="nombre_administrador" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="pass_administrador" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="correo_administrador" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Mascota">
+    <Key>
+      <PropertyRef Name="id_mascota" />
+    </Key>
+    <Property Name="nombre_mascota" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="id_mascota" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tamaño_mascota" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="edad_mascota" Type="int" Nullable="false" />
+    <Property Name="Publicacion_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Publicacion">
+    <Key>
+      <PropertyRef Name="id_publicacion" />
+    </Key>
+    <Property Name="Fecha_Perdida" Type="datetime" Nullable="false" />
+    <Property Name="imagen_publicacion" Type="image" />
+    <Property Name="descripcion_publicacion" Type="varchar" Nullable="false" />
+    <Property Name="nombre_publicacion" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="id_publicacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_usuario" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="apellido_usuario" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="edad_usuario" Type="int" Nullable="false" />
+    <Property Name="correo_usuario" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="login_usuario" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="password_usuario" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Administrador_id" Type="int" />
+  </EntityType>
+  <Association Name="FK__Mascota__Publica__0EA330E9">
+    <End Role="Publicacion" Type="BDMiMascotaModel.Store.Publicacion" Multiplicity="0..1" />
+    <End Role="Mascota" Type="BDMiMascotaModel.Store.Mascota" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publicacion">
+        <PropertyRef Name="id_publicacion" />
+      </Principal>
+      <Dependent Role="Mascota">
+        <PropertyRef Name="Publicacion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Publicaci__Usuar__09DE7BCC">
+    <End Role="Usuario" Type="BDMiMascotaModel.Store.Usuario" Multiplicity="0..1" />
+    <End Role="Publicacion" Type="BDMiMascotaModel.Store.Publicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="Publicacion">
+        <PropertyRef Name="Usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__Adminis__0519C6AF">
+    <End Role="Administrador" Type="BDMiMascotaModel.Store.Administrador" Multiplicity="0..1" />
+    <End Role="Usuario" Type="BDMiMascotaModel.Store.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Administrador">
+        <PropertyRef Name="id_administrador" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="Administrador_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="ListarMascotas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ListarPublicaciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ListarUsuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

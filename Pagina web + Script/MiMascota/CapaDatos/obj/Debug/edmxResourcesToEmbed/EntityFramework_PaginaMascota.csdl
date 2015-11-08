@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDMiMascotaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="EF_Pagina" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Administrador" EntityType="BDMiMascotaModel.Administrador" />
+    <EntitySet Name="Mascota" EntityType="BDMiMascotaModel.Mascota" />
+    <EntitySet Name="Publicacion" EntityType="BDMiMascotaModel.Publicacion" />
+    <EntitySet Name="Usuario" EntityType="BDMiMascotaModel.Usuario" />
+    <AssociationSet Name="FK__Usuario__Adminis__0519C6AF" Association="BDMiMascotaModel.FK__Usuario__Adminis__0519C6AF">
+      <End Role="Administrador" EntitySet="Administrador" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Mascota__Publica__0EA330E9" Association="BDMiMascotaModel.FK__Mascota__Publica__0EA330E9">
+      <End Role="Publicacion" EntitySet="Publicacion" />
+      <End Role="Mascota" EntitySet="Mascota" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Publicaci__Usuar__09DE7BCC" Association="BDMiMascotaModel.FK__Publicaci__Usuar__09DE7BCC">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Publicacion" EntitySet="Publicacion" />
+    </AssociationSet>
+    <FunctionImport Name="ListarUsuarios" EntitySet="Usuario" ReturnType="Collection(BDMiMascotaModel.Usuario)" />
+  </EntityContainer>
+  <EntityType Name="Administrador">
+    <Key>
+      <PropertyRef Name="id_administrador" />
+    </Key>
+    <Property Name="id_administrador" Type="Int32" Nullable="false" />
+    <Property Name="nombre_administrador" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="pass_administrador" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="correo_administrador" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Usuario" Relationship="BDMiMascotaModel.FK__Usuario__Adminis__0519C6AF" FromRole="Administrador" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Mascota">
+    <Key>
+      <PropertyRef Name="id_mascota" />
+    </Key>
+    <Property Name="nombre_mascota" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="id_mascota" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tamaño_mascota" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="edad_mascota" Type="Int32" Nullable="false" />
+    <Property Name="Publicacion_id" Type="Int32" />
+    <NavigationProperty Name="Publicacion" Relationship="BDMiMascotaModel.FK__Mascota__Publica__0EA330E9" FromRole="Mascota" ToRole="Publicacion" />
+  </EntityType>
+  <EntityType Name="Publicacion">
+    <Key>
+      <PropertyRef Name="id_publicacion" />
+    </Key>
+    <Property Name="Fecha_Perdida" Type="DateTime" Nullable="false" />
+    <Property Name="imagen_publicacion" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="descripcion_publicacion" Type="String" Nullable="false" MaxLength="8000" Unicode="false" FixedLength="false" />
+    <Property Name="nombre_publicacion" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="id_publicacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario_id" Type="Int32" />
+    <NavigationProperty Name="Mascota" Relationship="BDMiMascotaModel.FK__Mascota__Publica__0EA330E9" FromRole="Publicacion" ToRole="Mascota" />
+    <NavigationProperty Name="Usuario" Relationship="BDMiMascotaModel.FK__Publicaci__Usuar__09DE7BCC" FromRole="Publicacion" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_usuario" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="apellido_usuario" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="edad_usuario" Type="Int32" Nullable="false" />
+    <Property Name="correo_usuario" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="login_usuario" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="password_usuario" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Administrador_id" Type="Int32" />
+    <NavigationProperty Name="Administrador" Relationship="BDMiMascotaModel.FK__Usuario__Adminis__0519C6AF" FromRole="Usuario" ToRole="Administrador" />
+    <NavigationProperty Name="Publicacion" Relationship="BDMiMascotaModel.FK__Publicaci__Usuar__09DE7BCC" FromRole="Usuario" ToRole="Publicacion" />
+  </EntityType>
+  <Association Name="FK__Usuario__Adminis__0519C6AF">
+    <End Role="Administrador" Type="BDMiMascotaModel.Administrador" Multiplicity="0..1" />
+    <End Role="Usuario" Type="BDMiMascotaModel.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Administrador">
+        <PropertyRef Name="id_administrador" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="Administrador_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Mascota__Publica__0EA330E9">
+    <End Role="Publicacion" Type="BDMiMascotaModel.Publicacion" Multiplicity="0..1" />
+    <End Role="Mascota" Type="BDMiMascotaModel.Mascota" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publicacion">
+        <PropertyRef Name="id_publicacion" />
+      </Principal>
+      <Dependent Role="Mascota">
+        <PropertyRef Name="Publicacion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Publicaci__Usuar__09DE7BCC">
+    <End Role="Usuario" Type="BDMiMascotaModel.Usuario" Multiplicity="0..1" />
+    <End Role="Publicacion" Type="BDMiMascotaModel.Publicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="Publicacion">
+        <PropertyRef Name="Usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="ListarInformacionCompleta_Result">
+    <Property Type="DateTime" Name="Fecha_Perdida" Nullable="false" Precision="23" />
+    <Property Type="Binary" Name="imagen_publicacion" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="descripcion_publicacion" Nullable="false" MaxLength="8000" />
+    <Property Type="String" Name="nombre_publicacion" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_publicacion" Nullable="false" />
+    <Property Type="String" Name="nombre_mascota" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="tamaño_mascota" Nullable="false" MaxLength="10" />
+    <Property Type="Int32" Name="edad_mascota" Nullable="false" />
+  </ComplexType>
+</Schema>

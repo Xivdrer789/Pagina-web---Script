@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Paginas"  description="">
+    <siteMapNode url="~/Login/MiPerfil.aspx" title="Mis Datos Personales"  description="" />
+    <siteMapNode url="~/Login/ListarPublicacion.aspx" title="Listar Publicacion"  description="" />
+    <siteMapNode url="~/Login/ModificarPublicacion.aspx" title="Modificar Publicaciones" description=""/>
+  </siteMapNode>
+</siteMap>

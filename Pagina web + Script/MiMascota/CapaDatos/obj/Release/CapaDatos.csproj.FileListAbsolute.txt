@@ -1,0 +1,7 @@
+C:\Users\Bryan\Downloads\Pagina web(Modificado temporal)\Pagina web\MiMascota\CapaDatos\bin\Release\CapaDatos.dll
+C:\Users\Bryan\Downloads\Pagina web(Modificado temporal)\Pagina web\MiMascota\CapaDatos\bin\Release\CapaDatos.pdb
+C:\Users\Bryan\Downloads\Pagina web(Modificado temporal)\Pagina web\MiMascota\CapaDatos\bin\Release\CapaEntidades.dll
+C:\Users\Bryan\Downloads\Pagina web(Modificado temporal)\Pagina web\MiMascota\CapaDatos\bin\Release\CapaEntidades.pdb
+C:\Users\Bryan\Downloads\Pagina web(Modificado temporal)\Pagina web\MiMascota\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Bryan\Downloads\Pagina web(Modificado temporal)\Pagina web\MiMascota\CapaDatos\obj\Release\CapaDatos.dll
+C:\Users\Bryan\Downloads\Pagina web(Modificado temporal)\Pagina web\MiMascota\CapaDatos\obj\Release\CapaDatos.pdb

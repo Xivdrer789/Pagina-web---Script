@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <!--Carpeta No-Login-->
+  <!--Usuarios No logeados o No Registrados-->
+    <siteMapNode url="" title="Inicio"  description="">
+        <siteMapNode url="" title="Iniciar Sesion"  description="" />
+        <siteMapNode url="" title="Registrarse"  description="" />
+        <siteMapNode url="" title="Contactenos"  description="" />
+        <siteMapNode url="" title="Como Publicar"  description="" />
+        <siteMapNode url="" title="Mostrar publicacion"  description="" />
+      <!--Carpeta Login-->
+      <!--Usuarios logeados--> 
+        <siteMapNode url="" title="Inicio"  description="Mostrara sus datos" roles="User">
+        <siteMapNode url="" title="Desconectarse"  description="" roles="User"/>
+        <siteMapNode url="" title="Contactenos"  description="" roles="User"/>
+        <siteMapNode url="" title="Como Publicar"  description="" roles="User"/>
+        <siteMapNode url="" title="Mi Perfil"  description="" roles="User">
+          <siteMapNode url="" title="Mis Datos"  description="" roles="User"/>
+          <siteMapNode url="" title="Listar Publicacion"  description="" roles="User"/>
+          <siteMapNode url="" title="Modificar Publicacion"  description="" roles="User"/>
+        </siteMapNode>
+    </siteMapNode>
+      <!--Carpeta Admin-->
+      <!--Usuarios logeados Con Permisos Administrativos-->
+      <siteMapNode url="" title="Inicio"  description="Mostrara sus datos" roles="Admin">
+        <siteMapNode url="" title="Desconectarse"  description="" roles="Admin"/>
+        <siteMapNode url="" title="Contactenos"  description="" roles="Admin"/>
+        <siteMapNode url="" title="Como Publicar"  description="" roles="Admin"/>
+        <siteMapNode url="" title="Usuarios"  description="" roles="Admin">
+          <siteMapNode url="" title="Listar Usuarios"  description="" roles="Admin"/>
+          <siteMapNode url="" title="Eliminar Usuarios"  description="" roles="Admin"/>
+        </siteMapNode>
+        <siteMapNode url="" title="Publicaciones"  description="" roles="Admin">
+          <siteMapNode url="" title="Listar Publicaciones"  description="" roles="Admin"/>
+          <siteMapNode url="" title="Eliminar Publicaciones"  description="" roles="Admin"/>
+      </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

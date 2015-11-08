@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageNoLogin2.master.cs" Inherits="CapaInterfaz.No_Login.MasterPageNoLogin2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mi mascota</title>
+    <meta name="viewport" content="widht=device-widht, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="../css/fontello.css"> <!-- Accede a los iconos de redes sociales y el logo de mi mascota-->
+        <link rel="stylesheet" href="../css/estilos.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="contenedor">
+                <h1 class="icon-pet">Mi Mascota</h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                <a href="InicioNoLogin.aspx">Inicio</a>
+                <a href="IniciarSesion.aspx">Iniciar Sesión</a>
+                <a href="Registrarse.aspx">Registrarse</a>
+                <a href="#">Contactenos</a>
+                </nav>
+            </div>
+        </header>  
+
+        <main>
+            <section id="banner">
+                <img src="../imagen/banner.jpg">
+                <div class="contenedor">
+                <h3>Mascotas perdidas y en adopcion</h3>
+                <p>¿Como empiezo a publicar?</p>
+                <a href="#">Leer más</a>
+                </div>
+            </section>
+                        
+            <section id="bienvenidos">     
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </section>
+
+        <footer>
+            <div class="contenedor">
+                <p class="copy">Mi Mascota &copy; 2015</p>
+                <div class="sociales">
+                    <a class="icon-facebook-rect" href="#"></a>
+                    <a class="icon-twitter-rect" href="#"></a>
+                    <a class="icon-youtube" href="#"></a>
+                </div>
+            </div>
+        </footer>    
+    </form>
+</body>
+</html>

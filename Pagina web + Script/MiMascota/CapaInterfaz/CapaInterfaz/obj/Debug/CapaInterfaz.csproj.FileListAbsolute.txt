@@ -1,0 +1,15 @@
+c:\users\bryan\documents\visual studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaInterfaz.dll
+c:\users\bryan\documents\visual studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaInterfaz.pdb
+c:\users\bryan\documents\visual studio 2010\Projects\CapaInterfaz\CapaInterfaz\obj\Debug\CapaInterfaz.dll
+c:\users\bryan\documents\visual studio 2010\Projects\CapaInterfaz\CapaInterfaz\obj\Debug\CapaInterfaz.pdb
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaInterfaz.dll
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaInterfaz.pdb
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaEntidades.dll
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaNegocio.dll
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaDatos.dll
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaEntidades.pdb
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaNegocio.pdb
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\bin\CapaDatos.pdb
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\obj\Debug\CapaInterfaz.dll
+C:\Users\raide\Documents\Visual Studio 2010\Projects\CapaInterfaz\CapaInterfaz\obj\Debug\CapaInterfaz.pdb

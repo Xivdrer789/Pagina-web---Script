@@ -1,0 +1,118 @@
+/**Importar la fuente que usa la pagina web*/
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+/*Importo estilos para no tener abundancia de codigo en un solo archivo*/
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/*La cabecera de Mi mascota*/
+header {
+    width: 100%;
+    height: 50px;
+    background: #1c1c1c;
+    color: #fff;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;/*Dejando estatico en la pagina web*/
+}
+
+/*Contenido del header*/
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/** relacionado con el servicio */
+
+#servicio {
+    width: 100%;
+    height: 50px;
+    background: #1c1c1c;
+    color: #fff;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+h3{
+    float: left;
+}
+
+/*section bienvenidos*/
+
+#bienvenidos{
+    text-align: center;
+}
+
+/*imagenes*/
+
+.contBlog{
+    width: 90%;
+    margin: 15px auto;
+
+}
+
+/*footer, contenido de informacion de redes sociales */
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+/*alinear los contenedores*/
+@media (min-width: 768px) {
+.sociales {
+    width: auto;
+}
+footer .contenedor {
+    justify-content: space-between;
+}
+
+@media (min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+
