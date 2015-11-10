@@ -117,7 +117,7 @@ namespace CapaDatos
                 ObjectQuery<Publicacion> pub = contexto.Publicacion;
                 var linqLista = from m in pet
                                 join p in pub on m.Publicacion_id equals p.id_publicacion
-                                where m.Publicacion_id==id
+                                where p.Usuario_id==id
                                 select new
                                 {
                                     nombrePublicacion = p.nombre_publicacion,
