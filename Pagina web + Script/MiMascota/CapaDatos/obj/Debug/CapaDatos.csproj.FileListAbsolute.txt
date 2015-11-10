@@ -52,6 +52,7 @@ C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script - ver 6
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script - ver 6\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script - ver 6\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script - ver 6\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.pdb
+<<<<<<< HEAD
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaDatos.dll.config
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaDatos.pdb
@@ -60,3 +61,13 @@ C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script\Pagina 
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\raide\Documents\Visual Studio 2010\Projects\Pagina web + Script\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.pdb
+=======
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Ivan\Documents\Nueva carpeta\Pagina-web---Script\Pagina web + Script\MiMascota\CapaDatos\obj\Debug\CapaDatos.pdb
+>>>>>>> refs/remotes/origin/master
